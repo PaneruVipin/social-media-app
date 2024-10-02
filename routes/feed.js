@@ -41,6 +41,7 @@ router.get("/feed", async (req, res) => {
             image: like.user_id.image,
           })),
           likedByUser: Boolean(likedByUser),
+          likeCount: likes.length,
         };
       })
     );
